@@ -7,13 +7,18 @@ import plotly.graph_objects as go
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
+'''
+pip install pandas
+pip install numpy
+pip install plotly
+pip install scikit-learn
+'''
+
+
 
 
 data = pd.read_csv("regression/salary_data.csv")
-print(data.head())
-
-# Check if any null values
-print(data.isnull().sum())
+#print(data.head())
 
 # Visualize relationship between salary and job experience
 figure = px.scatter(data_frame = data, 
